@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "2f7f0ea7-20d8-4d3a-afd0-a08f50c277ea",
+		"name": "Stagrecords.Swasth Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30087102"
+	},
+	"item": [
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"india@yopmail.com\",\"password\":\"123456\"}"
+				},
+				"url": {
+					"raw": "https://stagrecords.swasth.net/api/login",
+					"protocol": "https",
+					"host": [
+						"stagrecords",
+						"swasth",
+						"net"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "myprofile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "swasthtoken",
+						"value": "238db81e41f8a7092675d0588bf91a7ccb627f2e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\":\"12\"}"
+				},
+				"url": {
+					"raw": "https://stagrecords.swasth.net/api/myprofile",
+					"protocol": "https",
+					"host": [
+						"stagrecords",
+						"swasth",
+						"net"
+					],
+					"path": [
+						"api",
+						"myprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editprofile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "swasthtoken",
+						"value": "4498420eed8ef1dd07e1b7e0d0eccb74adc909fd",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\": \"12\",\"first_name\":\"Admin\",\"gender\":\"Male\",\"marital_status\":\"Married\"}"
+				},
+				"url": {
+					"raw": "https://stagrecords.swasth.net/api/editprofile",
+					"protocol": "https",
+					"host": [
+						"stagrecords",
+						"swasth",
+						"net"
+					],
+					"path": [
+						"api",
+						"editprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "swasthtoken",
+						"value": "4498420eed8ef1dd07e1b7e0d0eccb74adc909fd",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\": \"12\"}"
+				},
+				"url": {
+					"raw": "https://stagrecords.swasth.net/api/logout",
+					"protocol": "https",
+					"host": [
+						"stagrecords",
+						"swasth",
+						"net"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"role_id\":\"3\",\"first_name\":\"Avijay\",\"last_name\":\"Bporje\",\"email\":\"aaa@yopmail.com\",\"mobile\":\"919766096226\",\"password\":\"123456\"}"
+				},
+				"url": {
+					"raw": "https://stagrecords.swasth.net/api/signup",
+					"protocol": "https",
+					"host": [
+						"stagrecords",
+						"swasth",
+						"net"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
